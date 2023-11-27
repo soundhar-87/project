@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+    <div class="eee">
+        <img id="a" src="Images/login_logo.png" alt="" height="150px" width="" >
+        <div class="form-box" id="b">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="std()"> Student</button>
+                <button type="button" class="toggle-btn" onclick=" admin()">Admin </button>
+
+            </div>
+            <div class="icons">
+                <a href="https://accounts.google.com"><img src="Images/google.jpg" alt=""  ></a>
+                <a href=-"#"><img src="Images/email.png" alt=""></a>
+    
+            </div>
+            <form id="std" class="input-group">
+                <input type="text" class="input-field" placeholder="User id" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="chech-box"><span>Remember me</span>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+            <form id="admin" class="input-group">
+                <input type="text" class="input-field" placeholder="Admin id " required>
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="chech-box" ><span> Remember</span>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+        </div>
+    </div>
+    <script>
+var x=document.getElementById("std");
+var y=document.getElementById("admin");
+var z=document.getElementById("btn");
+function admin(){
+    x.style.left ="-400px";
+    y.style.left ="50px";
+    z.style.left ="110px";
+}
+function std(){
+    x.style.left ="50px";
+    y.style.left ="450px";
+    z.style.left ="0px";
+}
+    </script>
+</body>
+</html>
